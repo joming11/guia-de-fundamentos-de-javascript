@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamentos JavaScript</title>
+  </head>
+
+  <body>
+    <h1>Fundamentos JavaScript</h1>
+    <h2>Variables en Js</h2>
+    <script>
+/* **********     Curso JavaScript: 5. Cadenas de Texto (Strings) -     ********** */
+
+      //Cadenas de Texto aka Strings
+      //se pueden declar con comillas dobles o simples
+      let nombre = "Jon";
+      let apellido = "MirCha";
+      let saludo = new String("Hola Mundo");
+      let lorem =
+        "       Lorem ipsum, dolor sit amet consectetur adipisicing elit. Est, et dolorum. Adipisci sequi, voluptates accusamus earum magnam non pariatur odit consequuntur dicta modi. Quam soluta aliquid nam ea quod dolore.      ";
+
+      console.log(nombre, apellido, saludo);
+      //para saber la cantidad de caracteres
+      console.log(
+        nombre.length,
+        apellido.length,
+        saludo.length,
+        //metodos
+        nombre.toUpperCase(), //solo mayusculas
+        apellido.toLowerCase(), //solo minusculas
+        lorem.includes("amet"), //para buscar dentro del string la palabra amet
+        lorem.includes("jon"),
+        lorem,
+        lorem.trim(), //quita los espacios en blanco al principio y final de un string
+        lorem.split(" "), //genera un arreglo a partir de un string
+        lorem.split(",")
+      );
+</script>
+</body>
+</html>
