@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamentos JavaScript</title>
+  </head>
+
+  <body>
+    <h1>Fundamentos JavaScript</h1>
+    <h2>Variables en Js</h2>
+    <script>
+/* **********     Curso JavaScript: 4. Constantes (const) -     ********** */
+
+      //Constantes
+      //no se puede declarar constantes vacias
+      // si el valor de una constante es del tipo primitivo, no se puede redeclarar
+      //si el valor de una constante es del tipo compuesto, se pueden agregar nuevos valores
+      let a; //si se puede declarar una variable vacia con let
+      const PI = 3.1416;
+      //const NUEVE;
+      console.log(PI);
+      //PI = 3.15;
+
+      a = "kenai";
+      console.log(a);
+
+      const objeto = {
+        nombre: "Jon",
+        edad: 35,
+      };
+
+      const colores = ["blanco", "negro", "azul"];
+
+      console.log(objeto);
+      console.log(colores);
+
+      objeto.correo = "jonmircha@gmail.com";
+      colores.push("anaranjado");
+
+      console.log(objeto);
+      console.log(colores);
+      </script>
+      </body>
+      </html>
