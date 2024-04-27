@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamentos JavaScript</title>
+  </head>
+
+  <body>
+    <h1>Fundamentos JavaScript</h1>
+    <h2>numeros en js</h2>
+    <script>
+        /* **********     Curso JavaScript: 7. Números (Numbers) -     ********** */
+
+      let a1 = 2;
+      let b = new Number(1);
+      let c = 7.19;
+      let d = "5.6";
+
+      console.log(a, b);
+      console.log(c.toFixed(1)); //para mostrar un decimal
+      console.log(c.toFixed(5)); //define cuantos decimales mostrar
+      console.log(parseInt(c)); //devuelve la parte entera
+      console.log(parseFloat(c)); //devuelve el entero y los decimales
+      console.log(typeof c, typeof d); //devuelve el tipo de valor de una variable
+      console.log(a + b);
+      console.log(c + parseInt(d)); //se aplica casting->cambio de tipo de valor para poder realizar la operacion, pero suma la parte entera del valor
+      console.log(c + parseFloat(d)); //se aplica el cambio de tipo de valor y se suma correctamente
+      console.log(c + Number.parseInt(d));
+      console.log(c + Number.parseFloat(d)); //parseFloat proviene del constructor number y no del objeto window, por eso se ejecuta de esta manera, no es necesario el Number.parseInt pero es lo que en realidad hace.
+    </script>
+  </body>
+</html>
