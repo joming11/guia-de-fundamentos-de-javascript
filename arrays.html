@@ -1,0 +1,59 @@
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fundamentos JavaScript</title>
+  </head>
+
+  <body>
+    <h1>Fundamentos JavaScript</h1>
+    <h2>Arreglos en js</h2>
+    <script>
+      /* ***Curso JavaScript: 11. Arreglos (Arrays)** */
+      //formas de declarar un arreglo
+      //la indexacion es desde el numero 0
+      //puede contener cualquier tipo de dato
+      const a = [];
+      const b = [1, true, "Hola", ["A", "B", "C", [1, 2, 3]]];
+      console.log(a);
+      console.log(b);
+      console.log(b.length);
+      console.log(b[2]); //para obtener solo el 3er elemento dentro del arreglo
+      console.log(b[0]);
+      console.log(b[3]);
+      console.log(b[3][2]); //si tenemos un arreglo dentro de otro arreglo, accedemos a la posicion de esta manera
+      console.log(b[3][3][0]);
+
+      //otra forma de declarar un arreglo
+      const c = Array.of("X", "Y", "Z", 9, 8, 7);
+      console.log(c);
+
+      //para declarar un array con 100 elementos - .fill define cual es ese elemento que estara 100 veces
+      const d = Array(100).fill(false);
+      console.log(d);
+
+      //forma en desuso
+      const e = new Array();
+      console.log(e);
+
+      const f = new Array(1, 2, 3, true, false);
+      console.log(f);
+
+      const colores = ["Rojo", "Verde", "Azul"];
+      console.log(colores);
+
+      //para agregar un nuevo elemento al arreglo
+      //.push lo agrega al final del arreglo
+      colores.push("Negro");
+      console.log(colores);
+
+      //.pop elimina el ultimo elemento
+      colores.pop();
+      console.log(colores);
+
+      colores.forEach(function (el, index) {
+        console.log(`<li id="${index}">${el}</li>`);
+      });
+    </script>
+  </body>
+</html>
